@@ -19,6 +19,7 @@ buildscript {
 
 apply plugin: 'com.android.application'
 
+
 repositories {
     mavenCentral()
 }
@@ -55,7 +56,10 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
+    apply plugin: 'checkstyle'
+
     implementation 'org.aspectj:aspectjrt:1.9.0'
+
 }
 
 final def log = project.logger
